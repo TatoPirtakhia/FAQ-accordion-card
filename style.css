@@ -82,6 +82,10 @@ h6 {
     top: 0px;
 }
 
+.desktop_images {
+    display: none;
+}
+
 body {
     /* padding-top: 100px; */
     min-height: 100vh;
@@ -105,6 +109,10 @@ main {
 
 .disable {
     display: none;
+   
+}
+.two{
+    transition: all 0.4s ease-in-out;
 }
 
 .container {
@@ -114,7 +122,7 @@ main {
     padding-bottom: 50px;
 }
 
-.title {
+.title_FAQ {
     margin-bottom: 22px;
 }
 
@@ -135,7 +143,7 @@ main {
     flex-direction: row;
 }
 
-.questions p {
+.title {
     font-size: 13px;
     font-weight: 400;
     line-height: 17px;
@@ -146,6 +154,33 @@ main {
     background: #E8E8EA;
     width: 280px;
     height: 1px;
+}
+
+
+
+.bold_text {
+    cursor: pointer;
+    color: #1E1F36;
+    font-weight: 700;
+}
+
+.hidden {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #787887;
+    width: 280px;
+    text-align: left;
+    display: block;
+    opacity: 1;
+    transition: opacity 5s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.Image{
+    transition: transform 0.5s ease-in-out;
+}
+.rotated {
+    transform: rotate(180deg);
 }
 
 @media (min-width:1440px) {
@@ -159,16 +194,19 @@ main {
         padding-bottom: 80px;
         display: flex;
         align-items: flex-end;
-        background-image:url('./images/bg-pattern-desktop.svg'),url('./images/illustration-woman-online-desktop.svg');
-        background-repeat: no-repeat,no-repeat,no-repeat;
+        background-image: url('./images/bg-pattern-desktop.svg'), url('./images/illustration-woman-online-desktop.svg');
+        background-repeat: no-repeat, no-repeat, no-repeat;
         /* background-size: 100% 100%; */
-        background-position: top 65% left -576px , top 60% left -80px ;
+        background-position: top 65% left -576px, top 60% left -80px;
     }
-.desktop_images{
-    position: absolute;
-    top: 43%;
-    left: -90px;
-}
+
+    .desktop_images {
+        display: block;
+        position: absolute;
+        top: 43%;
+        left: -90px;
+    }
+
     .container {
         width: 350px;
         margin-top: 65px;
@@ -185,29 +223,18 @@ main {
     .questions {
         width: 350px;
     }
+
     .questions p {
         font-size: 14px;
         line-height: 17.5px;
-        
+
     }
 
-    .questions:hover p{
+    .questions:hover p {
         color: #F47B56;
         cursor: pointer;
     }
-    .span_text{
-        display: block;
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 18px;
-        color:#787887 ;
-        width: 320px;
-        margin-top: 15px;
-    }
-    .bold_text p{
-        cursor: pointer;
-        color: #1E1F36;
-        font-weight: 700;
-    }
+
+
 
 }
