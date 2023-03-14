@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/*
+1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 
+    2. Remove default margin
+   */
+* {
+    margin: 0;
+}
+
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+/*
+    6. Improve media defaults
+ */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+.image {
+    margin-top: -109px;
+    margin-bottom: 60px;
+}
+
+.back {
+    position: absolute;
+    top: 0px;
+}
+
+body {
+    /* padding-top: 100px; */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+}
+
+main {
+    /* margin: auto; */
+    width: 327px;
+    background: #FFFFFF;
+    box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+    border-radius: 23px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.disable {
+    display: none;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.title {
+    margin-bottom: 22px;
+}
+
+.card {
+    width: 280px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 18px;
+    margin-top: 18px;
+}
+
+.questions {
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.questions p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #4B4C5F;
+}
+
+.line {
+    background: #E8E8EA;
+    width: 280px;
+    height: 1px;
+}
+
+@media (min-width:1440px) {
+    .image {
+        display: none;
+    }
+
+    main {
+        position: relative;
+        width: 920px;
+        padding-bottom: 80px;
+        display: flex;
+        align-items: flex-end;
+        background-image:url('./images/bg-pattern-desktop.svg'),url('./images/illustration-woman-online-desktop.svg');
+        background-repeat: no-repeat,no-repeat,no-repeat;
+        /* background-size: 100% 100%; */
+        background-position: top 65% left -576px , top 60% left -80px ;
+    }
+.desktop_images{
+    position: absolute;
+    top: 43%;
+    left: -90px;
+}
+    .container {
+        width: 350px;
+        margin-top: 65px;
+        margin-right: 95px;
+        display: flex;
+        align-items: flex-start;
+        padding-bottom: 0;
+    }
+
+    .card {
+        width: 350px;
+    }
+
+    .questions {
+        width: 350px;
+    }
+    .questions p {
+        font-size: 14px;
+        line-height: 17.5px;
+        
+    }
+
+    .questions:hover p{
+        color: #F47B56;
+        cursor: pointer;
+    }
+    .span_text{
+        display: block;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        color:#787887 ;
+        width: 320px;
+        margin-top: 15px;
+    }
+    .bold_text p{
+        cursor: pointer;
+        color: #1E1F36;
+        font-weight: 700;
+    }
+
+}
