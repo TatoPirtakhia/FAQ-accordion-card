@@ -87,6 +87,7 @@ h6 {
 }
 
 body {
+    -webkit-font-smoothing: antialiased;
     padding-top: 30%;
     min-height: 100vh;
     display: flex;
@@ -107,10 +108,7 @@ main {
     position: relative;
 }
 
-.disable {
-    display: none;
 
-}
 
 .two {
     transition: all 0.4s ease-in-out;
@@ -121,6 +119,8 @@ main {
     align-items: center;
     flex-direction: column;
     padding-bottom: 50px;
+    transition: all 0.5s ease-in-out;
+
 }
 
 .title_FAQ {
@@ -129,11 +129,15 @@ main {
 
 .card {
     width: 280px;
+    height: max-content;
+    margin-bottom: 18px;
+    padding-bottom: 1.3rem;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    margin-bottom: 18px;
-    margin-top: 18px;
+    transition: all 0.5s ease-in-out;
+    border-bottom: 1px solid #E8E8EA;
+    
 }
 
 .questions {
@@ -149,6 +153,7 @@ main {
     font-weight: 400;
     line-height: 17px;
     color: #4B4C5F;
+    transition: all 0.5s ease-in-out;
 }
 
 .line {
@@ -164,26 +169,33 @@ main {
     color: #1E1F36;
     font-weight: 700;
 }
-
-.hidden {
+.disable {
+    /* display: none; */
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.enable {
+    max-height: max-content;
     font-size: 12px;
     font-weight: 400;
     line-height: 18px;
     color: #787887;
     width: 280px;
     text-align: left;
-    display: block;
     opacity: 1;
-    transition: opacity 5s ease-in-out;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .Image {
-    transition: transform 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .rotated {
     transform: rotate(180deg);
+    transition: all 0.5s ease-in-out;
+
 }
 
 @media (min-width:1440px) {
@@ -214,6 +226,7 @@ main {
     }
 
     .container {
+        height: 350px;
         width: 350px;
         margin-top: 65px;
         margin-right: 95px;

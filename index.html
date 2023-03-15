@@ -7,7 +7,7 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <title>Frontend Mentor | FAQ Accordion Card</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -36,17 +36,17 @@
         <span class="disable one"> You can invite up to 2 additional users on the Free plan. There is no limit on
           team members for the Premium plan.</span>
       </div>
-      <div class="line"></div>
       <div class="second_row card">
         <div class="second_question questions">
           <p class="title2 title">What is the maximum file upload size?</p>
           <img id="Image2" class="Image" src="./images/icon-arrow-down.svg">
         </div>
-        <span class="disable two">
-          No more than 2GB. All files in your account must fit your allotted storage space.
-        </span>
+        <div class="disable two">
+          <span>
+            No more than 2GB. All files in your account must fit your allotted storage space.
+          </span>
+        </div>
       </div>
-      <div class="line"></div>
 
       <div class="third_row card">
         <div class="third_question questions">
@@ -60,7 +60,6 @@
           A reset link will be emailed to you.
         </span>
       </div>
-      <div class="line"></div>
 
       <div class="fourth_row card">
         <div class="fourth_question questions">
@@ -71,7 +70,6 @@
           Yes! Send us a message and we’ll process your request no questions asked.
         </span>
       </div>
-      <div class="line"></div>
 
       <div class="fifth_row card">
         <div class="fift_question questions">
@@ -82,11 +80,10 @@
           Chat and email support is available 24/7. Phone lines are open during normal business hours.
         </span>
       </div>
-      <div class="line"></div>
 
     </div>
   </main>
-<script src="./App.js"></script>
+  <script src="./App.js"></script>
 </body>
 
 </html>
